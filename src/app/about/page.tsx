@@ -64,31 +64,17 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              I’ve loved computers since I was a kid, as I’ve been curious about how things work and how they are built. I didn’t start coding until I was 20, but I quickly fell in love with it. I’ve been coding for 6 years now and I’ve been learning a lot since then.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              I’m a self-taught developer, I’ve learned a lot from the internet and from the people around me. and I’m always looking to learn more and improve my skills.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
-            </p>
-            <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
-            </p>
+              And what I love more than coding is making music, it has been my passion since I was a kid watching festivals and concerts on YouTube. But I was never able to make music until I was 19 ( better late than never lol ). I’ve been making music for 7 years now starting with making music for clients as a ghost producer and then I started making music for myself as Saikyo.
+              </p>
+              <p>
+                It’s a never ending journey of learning and improving and I’m always looking forward to what’s next.
+              </p>
           </div>
         </div>
         <div className="lg:pl-20">
