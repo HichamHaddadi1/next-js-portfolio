@@ -11,40 +11,44 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Dispo.work',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'A platform to manager external workers and freelancers.',
+    link: { href: 'https://dev.dispo.work', label: 'Dispo.work' },
+    category : 'Coding',
   },
   {
-    name: 'Animaginary',
+    name: 'Tamkine internship',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
-  },
+      'A platform to manage the internship process in collaboration with some of the best universities.',
+    link: { href: 'https://scholarship.tamkine.org/', label: 'Tamkine Foundation' },
+    category : 'Coding',
+  }, 
   {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
+    name: 'TamTech Solutions' ,
+    description: 'A platform to offer digital solutions for small businesses.',
+    link: { href: 'https://www.tamtechsolution.com/', label: 'TamTech Solutions ' },
+    category : 'Coding',
+  } , 
   {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
+    name:'Back At it',
+    description : 'Collaboration between me and again Oliver Silva and MAD1AD ',
+    link : {href:'https://open.spotify.com/track/53akC7y7H4yNAUkf88Kg9e?si=93e93aa6f5164834' , label :'Stream Back at it'},
+    category: 'Music'
+  }, 
   {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+    name:'Phantom',
+    description : 'First collaboration between me and my buddy Oliver Silva ',
+    link : {href:'https://open.spotify.com/track/1BpDmYgUg04mxgvGNmyY7a?si=f92f695d1dee4583' , label :'Stream Phantom'},
+    category: 'Music'
+  }, 
+  {
+    name:'On My Mind',
+    description : 'A Very powerfull bass house single ',
+    link : {href:'https://open.spotify.com/track/7LzpKkBOnu9GnvRd1PiJTU?si=8ee79d85248e41b1' , label :'Stream On My Mind'},
+    category: 'Music'
+  }
+ 
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -58,37 +62,45 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+function SpotifyIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+     <path d="M19.098 10.638c-3.868-2.297-10.248-2.508-13.941-1.387-.593.18-1.22-.155-1.399-.748-.18-.593.154-1.22.748-1.4 4.239-1.287 11.285-1.038 15.738 1.605.533.317.708 1.005.392 1.538-.316.533-1.005.709-1.538.392zm-.126 3.403c-.272.44-.847.578-1.287.308-3.225-1.982-8.142-2.557-11.958-1.399-.494.15-1.017-.129-1.167-.623-.149-.495.13-1.016.624-1.167 4.358-1.322 9.776-.682 13.48 1.595.44.27.578.847.308 1.286zm-1.469 3.267c-.215.354-.676.465-1.028.249-2.818-1.722-6.365-2.111-10.542-1.157-.402.092-.803-.16-.895-.562-.092-.403.159-.804.562-.896 4.571-1.045 8.492-.595 11.655 1.338.353.215.464.676.248 1.028zm-5.503-17.308c-6.627 0-12 5.373-12 12 0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12z" fill='white'/>
+    </svg>
+  )
+}
+
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Things I’ve made trying to put my print in the universe.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Things I’ve made trying to put my print in the universe."
+      intro="I’ve worked on tons of projects whether in music industry or web developing or maybe making a small step into the game development universe. which they all shaped my career and made me who I am today. Here are some of them."
     >
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 "
       >
         {projects.map((project) => (
-          <Card as="li" key={project.name}>
-            <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-8 w-8"
-                unoptimized
-              />
-            </div>
+          <Card as="li" key={project.name} >
+             
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-              <LinkIcon className="h-6 w-6 flex-none" />
+            {project.category === "Coding" ? (
+  <LinkIcon className="h-6 w-6 flex-none" />
+) : (
+  // Your else case component or content goes here
+  <SpotifyIcon className="h-6 w-6 flex-none " />
+)}
+
+
               <span className="ml-2">{project.link.label}</span>
             </p>
           </Card>
