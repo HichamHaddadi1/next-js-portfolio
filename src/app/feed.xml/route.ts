@@ -16,12 +16,12 @@ export async function GET(req: Request) {
 
   let feed = new Feed({
     title: author.name,
-    description: 'Your blog description',
+    description: 'Software developer, music producer',
     author,
     id: siteUrl,
     link: siteUrl,
-    image: `${siteUrl}/favicon.ico`,
-    favicon: `${siteUrl}/favicon.ico`,
+    image: `${siteUrl}/favicon.png`,
+    favicon: `${siteUrl}/favicon.png`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     feedLinks: {
       rss2: `${siteUrl}/feed.xml`,
