@@ -132,7 +132,7 @@ export default function About() {
               </div>
             </div>
             <div className="mt-8 flex justify-end">
-            <Button href="/" variant="secondary" className="mt-4">
+            <Button href="#" variant="secondary" className="mt-4">
           Send message
         </Button>
             </div>

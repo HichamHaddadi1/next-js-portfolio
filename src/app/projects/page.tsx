@@ -81,16 +81,20 @@ export default function Projects() {
       title="Things I’ve made trying to put my print in the universe."
       intro="I’ve worked on tons of projects whether in music industry or web developing or maybe making a small step into the game development universe. which they all shaped my career and made me who I am today. Here are some of them."
     >
+       
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 "
+        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 mt-4 "
       >
         {projects.map((project) => (
           <Card as="li" key={project.name} >
              
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              <Card.Link href={project.link.href}>{project.name}</Card.Link>
+              <Card.Link href={project.link.href}>{project.name}</Card.Link> 
             </h2>
+            <Card.Eyebrow className="inline-flex items-center rounded-md bg-zinc-800 dark:bg-zinc-50 text px-2 text-xs font-medium text-zinc-50 dark:text-zinc-600   ">
+              {project.category}
+              </Card.Eyebrow>
             <Card.Description>{project.description}</Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
             {project.category === "Coding" ? (
@@ -99,9 +103,10 @@ export default function Projects() {
   // Your else case component or content goes here
   <SpotifyIcon className="h-6 w-6 flex-none " />
 )}
-
-
+   
               <span className="ml-2">{project.link.label}</span>
+
+              
             </p>
           </Card>
         ))}
